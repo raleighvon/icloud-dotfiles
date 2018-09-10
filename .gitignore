@@ -3,3 +3,4 @@
 /.vim/.netrwhist
 /.vim/backup
 /.env
+.DS_Store
