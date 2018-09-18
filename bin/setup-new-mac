@@ -38,7 +38,7 @@ else
 fi
 
 # Brew installations
-for pkg in zsh bash-completion git nodenv node-build rbenv ruby-build postgresql wget tree jid jq chromedriver phantomjs heroku fzf ripgrep mysql; do
+for pkg in zsh bash-completion git nodenv node-build yarn rbenv ruby-build postgresql wget tree jid jq phantomjs heroku fzf ripgrep mysql; do
   if brew list -1 | grep -q "^${pkg}\$"; then
     echo "Package '$pkg' is installed; updating:"
     brew upgrade "$pkg" --cleanup || true
@@ -71,7 +71,7 @@ eval "$(nodenv init -)"
 nodenv global "$NODE_VERSION"
 
 ## Set up ruby
-RUBY_VERSION="2.3.3"
+RUBY_VERSION="2.4.3"
 if [ -d ".rbenv/versions/$RUBY_VERSION" ]; then
   echo "Ruby $RUBY_VERSION already installed"
 else

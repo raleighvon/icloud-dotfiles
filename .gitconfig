@@ -1,6 +1,6 @@
 [user]
-  name = Dustin Tinney
-  email = tinney@gmail.com
+  name = Raleigh Habersberger
+  email = raleigh@raleighvon.com
 
 [alias]
   remotebranch = !sh -c 'git push origin HEAD:refs/heads/$0 && git checkout --track -b $0 origin/$0'
